@@ -1,0 +1,81 @@
+.lorem1{
+    border: 2px solid #000000;
+    background-color: rgb(0, 255, 10);
+    border-radius: 12px;
+    text-align: center;
+    font: 400 28px "Rancho", monospace;
+}
+.lorem2{
+    border: 5px solid #dfdd01;
+    background-color: aqua;
+    font: 500 15px Arial, sans-serif;
+    color: blue;
+}
+.lorem2:hover{
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px #000000;
+}
+.columns{
+    column-count: 3;
+    column-gap: 25px;
+    column-rule: 5px solid #000000;
+}
+.italic{
+    font-style: italic;
+}
+.bold{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: #0000ff;
+}
+.display_image
+{
+    display: inline-flex;
+}
+.display_image img
+{
+    width: calc(100% / 8);
+}
+table{
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+table, th, tr, td{
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+th{
+    background-color: blue;
+}
+.odd{
+    background-color: #f0f0f0;
+}
+.even{
+    background-color: #d0d0d0;
+}
+tr:hover{
+    background-color: #00ff22;
+}
+.animated{
+    position: relative;
+    width: fit-content;
+    animation: roll 10s 2s infinite;
+}
+@keyframes roll{
+    0%{
+        transform: rotate(0deg);
+        left: 0px;
+    }
+    100%{
+        transform: rotate(360deg);
+        left: calc(100% - 209px);
+    }
+}
